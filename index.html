@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Airbnb UI Clone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/tailwindcss.js"></script>
+
+</head>
+
+<body>
+  <main id="app">
+
+    <header>
+      <!-- First Menu -->
+      <nav class="flex flex-wrap md:flex-nowrap py-4 px-4 md:px-11 border-b border-gray-200">
+        <div class="w-full"><img src="./assets/images/logo-arbnb.png" class="mb-3 md:mb-0" /></div>
+        
+        <div class="w-full">
+          <form action=""
+            class="w-full flex items-center shadow-md rounded-full py-2 px-2 bg-white border-l border-t border-r  border-gray-300">
+            <label for="" class="w-[29%] text-sm font-semibold ml-4 mr-4 border-r border-gray-300">Qualquer
+              Lugar</label>
+            <label for="" class="w-1/3 text-sm font-semibold mr-3.5 border-r border-gray-300">Qualquer Semana</label>
+            <input type="text" placeholder="Hóspedes?" class="w-[23%] px-3c outline-none">
+            <button type="submit" class="py-2.5 px-2.5 rounded-full bg-color-airbnb" style="background-color: #ff385c">
+              <svg class="w-3" stroke-width="3" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Pesquisa</title>
+                <path d="M10,20A10,10,0,1,1,20,10,10,10,0,0,1,10,20ZM10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Z" />
+                <path
+                  d="M23,24a1,1,0,0,1-.71-.29L16,17.42A1,1,0,0,1,17.42,16l6.29,6.28a1,1,0,0,1,0,1.42A1,1,0,0,1,23,24Z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="w-full flex items-center space-x-5 mt-4 md:mt-auto">
+          <h2 class="font-semibold ml-auto">Anuncie seu espaço no Airbnb</h2>
+          <svg class="w-4"  data-name="interface essential by mad-lab studio"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>Browser</title>
+            <path
+              d="M24,12A12,12,0,0,0,15.71.59h0a12,12,0,0,0-7.36,0h0a12,12,0,0,0,.08,22.85h.05a11.93,11.93,0,0,0,7.16,0h.05A12,12,0,0,0,24,12Zm-7,8.67A30.72,30.72,0,0,0,17.79,16h3.37A10.08,10.08,0,0,1,17,20.67ZM2,12a10.2,10.2,0,0,1,.2-2H6.06C6,10.66,6,11.33,6,12s0,1.34.06,2H2.2A10.2,10.2,0,0,1,2,12Zm6,0c0-.68,0-1.34.06-2h7.88c0,.66.06,1.32.06,2s0,1.34-.06,2H8.06C8,13.34,8,12.68,8,12Zm9.94-2H21.8a10.1,10.1,0,0,1,0,4H17.94c0-.66.06-1.33.06-2S18,10.66,17.94,10Zm3.22-2H17.79A30.72,30.72,0,0,0,17,3.33,10.08,10.08,0,0,1,21.16,8ZM14.55,2.34A24.26,24.26,0,0,1,15.78,8H8.22A24.26,24.26,0,0,1,9.45,2.34,10.25,10.25,0,0,1,12,2,10.25,10.25,0,0,1,14.55,2.34ZM7,3.33A30.72,30.72,0,0,0,6.21,8H2.84A10.08,10.08,0,0,1,7,3.33ZM2.84,16H6.21A30.72,30.72,0,0,0,7,20.67,10.08,10.08,0,0,1,2.84,16Zm6.61,5.66A24.26,24.26,0,0,1,8.22,16h7.56a24.26,24.26,0,0,1-1.23,5.66A10.25,10.25,0,0,1,12,22,10.25,10.25,0,0,1,9.45,21.66Z" />
+          </svg>
+          <!-- User Area -->
+          <span class="relative flex space-x-2 rounded-full py-1 pl-2 pr-1 border border-gray-300">
+            <svg class="w-5" 
+              data-name="interface essential by mad-lab studio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>menu alt 3</title>
+              <path d="M19,13H5a1,1,0,0,1,0-2H19a1,1,0,0,1,0,2Z" />
+              <path d="M19,8H5A1,1,0,0,1,5,6H19a1,1,0,0,1,0,2Z" />
+              <path d="M19,18H5a1,1,0,0,1,0-2H19a1,1,0,0,1,0,2Z" />
+            </svg>
+            <svg class="w-8 svg-user" stroke-width="" fill="#ff0000" xmlns="http://www.w3.org/2000/svg"
+              data-name="Layer 1" viewBox="0 0 24 24">
+              <path fill="#000"
+                d="M12,2A10,10,0,0,0,4.65,18.76h0a10,10,0,0,0,14.7,0h0A10,10,0,0,0,12,2Zm0,18a8,8,0,0,1-5.55-2.25,6,6,0,0,1,11.1,0A8,8,0,0,1,12,20ZM10,10a2,2,0,1,1,2,2A2,2,0,0,1,10,10Zm8.91,6A8,8,0,0,0,15,12.62a4,4,0,1,0-6,0A8,8,0,0,0,5.09,16,7.92,7.92,0,0,1,4,12a8,8,0,0,1,16,0A7.92,7.92,0,0,1,18.91,16Z" />
+            </svg>
+            <span
+              class="absolute top-0 right-0 -ml-1.5 rounded-full border-2 border-white p-[5px] bg-color-airbnb"></span>
+          </span>
+        </div>
+      </nav>
+
+      <!-- Nav Menu categories -->
+      <nav class="w-full grid grid-cols-5 md:flex md:justify-between md:items-center overflow-x-hidden pt-6 px-5 md:px-10 md:h-24">
+        <ul v-for="menu in menuCategories" :key="menu.id" :class="`w-[90%] lg:w-[30%] h-full`">
+          <li @click="activeMenu(menu.id)" :class="`text-center w-full h-full cursor-pointer`">
+            <img :src="`./assets/images/icons/${menu.img}`" alt="" class="w-14 h-14 md:w-8 md:h-8 mb-1 mx-auto">
+            <span :class="activatedMenu == menu.id ? 'active': ''" class="text-xs text-gray-600 font-medium pb-3 ">{{
+              menu.name }}</span>
+          </li>
+        </ul>
+        <div class="w-[6%] md:w-[11%] flex items-center">
+          <button class="rounded-full border border-gray-300 py-px px-px mr-3">
+            <svg class="w-7" stroke-width="8px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z" />
+            </svg>
+          </button>
+          <button
+            class="flex justify-center items-center text-sm font-medium rounded-xl border border-gray-300 py-3.5 px-3.5">
+            <svg class="w-3.5 inline mr-2" 
+              data-name="interface essential by mad-lab studio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>Settings alt 2</title>
+              <path d="M17,8a3,3,0,1,1,3-3A3,3,0,0,1,17,8Zm0-4a1,1,0,1,0,1,1A1,1,0,0,0,17,4Z" />
+              <path d="M15,6H2A1,1,0,0,1,2,4H15a1,1,0,0,1,0,2Z" />
+              <path d="M22,6H19a1,1,0,0,1,0-2h3a1,1,0,0,1,0,2Z" />
+              <path d="M12,15a3,3,0,1,1,3-3A3,3,0,0,1,12,15Zm0-4a1,1,0,1,0,1,1A1,1,0,0,0,12,11Z" />
+              <path d="M10,13H2a1,1,0,0,1,0-2h8a1,1,0,0,1,0,2Z" />
+              <path d="M22,13H14a1,1,0,0,1,0-2h8a1,1,0,0,1,0,2Z" />
+              <path d="M7,22a3,3,0,1,1,3-3A3,3,0,0,1,7,22Zm0-4a1,1,0,1,0,1,1A1,1,0,0,0,7,18Z" />
+              <path d="M22,20H9a1,1,0,0,1,0-2H22a1,1,0,0,1,0,2Z" />
+              <path d="M5,20H2a1,1,0,0,1,0-2H5a1,1,0,0,1,0,2Z" />
+            </svg>
+            Filtros
+          </button>
+        </div>
+      </nav>
+
+    </header>
+
+    <section class="flex flex-col items-center mb-14 px-5 lg:px-9">
+      
+      <!-- Filter by Price -->
+      <div class="w-11/12 mt-3 mb-5 border border-gray-300 rounded-xl md:mb-12 md:w-2/3 lg:w-[48%]">
+        <form 
+          class="flex items-center py-3 px-4">
+          <label for="" class="w-[28%] text-base font-semibold mr-3 border-r border-gray-300">Mostrar preço
+            total</label>
+          <input type="text" placeholder="Inclui todas as taxas, sem imposto"
+            class="w-[69%] text-gray-600 outline-none">
+            
+            <label for="Toggle" class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-100"> 
+              <span class="relative">
+                <input id="Toggle" type="checkbox" class="hidden peer">
+                <div class="w-12 h-8 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-violet-400" style="background-color: #222222;"></div>
+                <div class="absolute inset-y-0 left-0 p-0 w-7 h-7 m-0.5 rounded-full shadow peer-checked:right-0 peer-checked:left-auto bg-white dark:bg-gray-800">
+                  <svg class="w-fullb bh-full "  data-name="interface essential by mad-lab studio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Validation - check</title>
+                    <path class="w-2 m-auto " d="M10,17a1,1,0,0,1-.71-.29l-3-3a1,1,0,0,1,1.42-1.42L10,14.59l5.79-5.8a1,1,0,0,1,1.42,1.42l-6.5,6.5A1,1,0,0,1,10,17Z"/>
+                  </svg>
+                </div>
+              </span> 
+            </label>
+        </form>
+      </div>
+
+      <!-- Homes area -->
+      <div class="flex2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <article v-for="home in homes" :key="home.id" class="mb-5 rounded-lg">
+          <!-- Image Box -->
+          <div class="flex flex-col h-72 relative">
+            <img :src="`./assets/images/${ home.img }`" :alt="home.title" class="w-full h-full rounded-xl">
+            <!-- SVG Heart -->
+            <svg  class="w-9 cursor-pointer absolute top-3 right-3" fill="#fff" stroke-width="2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+              <path :fill="color" d="M23.024,39.274c0.189,0.212,0.461,0.333,0.745,0.333h0.001c0.284,0,0.556-0.122,0.745-0.334l13.184-14.771
+                  c1.327-1.62,2.058-3.655,2.058-5.732c0-5.053-4.193-9.163-9.348-9.163c-2.538,0-4.904,0.98-6.652,2.725
+                  c-1.748-1.744-4.114-2.725-6.652-2.725c-5.154,0-9.348,4.11-9.348,9.163c0,2.078,0.731,4.115,2.094,5.777
+                  C9.979,24.703,19.967,35.859,23.024,39.274z M17.104,11.607c2.321,0,4.458,1.038,5.862,2.846c0.379,0.488,1.201,0.488,1.58,0
+                  c1.404-1.809,3.541-2.846,5.862-2.846c4.052,0,7.348,3.213,7.348,7.163c0,1.64-0.555,3.184-1.577,4.433L23.769,37.107
+                  c-4.576-5.111-12.165-13.59-12.405-13.869c-1.051-1.283-1.606-2.828-1.606-4.468C9.757,14.821,13.053,11.607,17.104,11.607z"/>
+            </svg>
+          </div>
+          <!-- Description Box -->
+          <div>
+            <h1 class="text-lg font-semibold mt-3 cursor-pointer">{{ home.title }}</h1>
+            <h3 class="text-lg font-normal color-home-subtitle">{{ home.dimention}} hectares</h3>
+            <h3 class="text-lg font-normal mb-1.5 color-home-subtitle">{{home.duration}}</h3>
+            <h2 class="text-lg underline">Total sem impostos: <strong>R${{formatedCurrency(home.price)}}</strong></h2>
+          </div>
+        </article>
+      </div>
+
+      <!-- Floater Map -->
+      <span class="w-2/5 text-white font-medium rounded-full py-3 px-3 pl-5 cursor-pointer fixed bottom-20 md:w-1/5 lg:w-36"
+        style="background-color: #222222;">
+        Exibir mapa
+        <svg class="w-5 inline" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M21.32,5.05l-6-2h-.07a.7.7,0,0,0-.14,0h-.23l-.13,0h-.07L9,5,3.32,3.05a1,1,0,0,0-.9.14A1,1,0,0,0,2,4V18a1,1,0,0,0,.68.95l6,2h0a1,1,0,0,0,.62,0h0L15,19.05,20.68,21A1.19,1.19,0,0,0,21,21a.94.94,0,0,0,.58-.19A1,1,0,0,0,22,20V6A1,1,0,0,0,21.32,5.05ZM8,18.61,4,17.28V5.39L8,6.72Zm6-1.33-4,1.33V6.72l4-1.33Zm6,1.33-4-1.33V5.39l4,1.33Z" />
+        </svg>
+      </span>
+    </section>
+
+    <!-- Fixed Footer -->
+    <footer
+      class="w-full flex justify-between items-center fixed bottom-0 bg-white text-sm py-3.5 px-5 md:px-9 border-t border-gray-300 z-50">
+      <ul class="flex flex-col md:flex-row space-x-3">
+        <li>&copy; 2023 Airbnb, inc.</li>
+        <li class="cursor-pointer hover:underline">Privacidade</li>
+        <li class="cursor-pointer hover:underline">Termos</li>
+        <li class="cursor-pointer hover:underline">Mapa do site</li>
+        <li class="cursor-pointer hover:underline">Informações da empresa</li>
+        <li class="cursor-pointer hover:underline">Destinos</li>
+      </ul>
+      <ul class="flex flex-wrap justify-end space-x-3 font-medium">
+        <li class="cursor-pointer">
+          <svg class="w-3.5 mr-1 mb-0.5 inline" 
+            data-name="interface essential by mad-lab studio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>Browser</title>
+            <path
+              d="M24,12A12,12,0,0,0,15.71.59h0a12,12,0,0,0-7.36,0h0a12,12,0,0,0,.08,22.85h.05a11.93,11.93,0,0,0,7.16,0h.05A12,12,0,0,0,24,12Zm-7,8.67A30.72,30.72,0,0,0,17.79,16h3.37A10.08,10.08,0,0,1,17,20.67ZM2,12a10.2,10.2,0,0,1,.2-2H6.06C6,10.66,6,11.33,6,12s0,1.34.06,2H2.2A10.2,10.2,0,0,1,2,12Zm6,0c0-.68,0-1.34.06-2h7.88c0,.66.06,1.32.06,2s0,1.34-.06,2H8.06C8,13.34,8,12.68,8,12Zm9.94-2H21.8a10.1,10.1,0,0,1,0,4H17.94c0-.66.06-1.33.06-2S18,10.66,17.94,10Zm3.22-2H17.79A30.72,30.72,0,0,0,17,3.33,10.08,10.08,0,0,1,21.16,8ZM14.55,2.34A24.26,24.26,0,0,1,15.78,8H8.22A24.26,24.26,0,0,1,9.45,2.34,10.25,10.25,0,0,1,12,2,10.25,10.25,0,0,1,14.55,2.34ZM7,3.33A30.72,30.72,0,0,0,6.21,8H2.84A10.08,10.08,0,0,1,7,3.33ZM2.84,16H6.21A30.72,30.72,0,0,0,7,20.67,10.08,10.08,0,0,1,2.84,16Zm6.61,5.66A24.26,24.26,0,0,1,8.22,16h7.56a24.26,24.26,0,0,1-1.23,5.66A10.25,10.25,0,0,1,12,22,10.25,10.25,0,0,1,9.45,21.66Z" />
+          </svg>
+          Português (BR)
+        </li>
+        <li>R$ BRL</li>
+        <li>
+          Atendimento e recursos
+          <svg class="w-6 h-auto ml-1 6mb-0.5 my-0 cursor-pointer inline-flex" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <path
+              d="M17,13.41,12.71,9.17a1,1,0,0,0-1.42,0L7.05,13.41a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0L12,11.29l3.54,3.54a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29A1,1,0,0,0,17,13.41Z" />
+          </svg>
+        </li>
+      </ul>
+    </footer>
+
+  </main>
+  <script src="assets/vue.js"></script>
+  <script src="assets/app.js"></script>
+
+</body>
+
+</html>

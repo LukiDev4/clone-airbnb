@@ -1,0 +1,30 @@
+body::-webkit-scrollbar {
+    width:8px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #ff385c;
+    border-radius:6px;
+  } 
+
+  .active {
+    border-bottom: 2px solid #000;
+  }
+
+  .bg-color-airbnb {
+    background-color: #ff385c
+  }
+
+  .color-airbnb {
+    color: #ff385c
+  }
+
+  .bg-gray-dark {
+    background-color: #222222;
+  }
+
+  .color-home-subtitle {
+    color: #717171;
+  }
+  footer {
+color: #222222;
+}
